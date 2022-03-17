@@ -113,7 +113,7 @@ int main()
                     scanf("%s",&saveBill);
 
                     if(saveBill=='y'){
-                        fp=fopen("RestaurentBill.dat","a+");
+                        fp=fopen("RestaurantBill.dat","a+");
                         fwrite(&ord,sizeof(struct orders),1,fp);
                         if(fwrite!=0){
                             printf("\nSuccecfully Saved\n\n");
@@ -130,7 +130,7 @@ int main()
             case 2:
 
                 system("cls");
-                fp=fopen("RestaurentBill.dat","r");
+                fp=fopen("RestaurantBill.dat","r");
                 printf("\n *****Your Previous Invoices *****\n");
                 while(fread(&order,sizeof(struct orders),1,fp)){
                         check=0;
@@ -155,7 +155,7 @@ int main()
                 //fgetc(stdin);
                 fgets(name,50,stdin);
                 name[strlen(name)-1]=0;
-                fp=fopen("RestaurentBill.dat","r");
+                fp=fopen("RestaurantBill.dat","r");
                 printf("\n *****Invoice of %s*****\n",name);
                 while(fread(&order,sizeof(struct orders),1,fp)){
                         if (!strcmp(order.customer,name)){
@@ -175,7 +175,7 @@ int main()
                 fclose(fp);
                 break;
             case 4:
-                    fclose(fopen("RestaurentBill.dat", "w"));
+                    fclose(fopen("RestaurantBill.dat", "w"));
                     printf("\n *****Cleared all Invoices*****\n\n");
                     break;
 
