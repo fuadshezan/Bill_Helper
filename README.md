@@ -9,5 +9,5 @@ It's a bill generator project based on C. Every shop or restaurent sell their pr
 For making the project I used structure which is a collection of variables under a single name, different type of functions, swtich case for operation selection.
 
 <p align="center">
-  <img src="Webp.net-gifmaker.gif" width="350" alt="screenshoot">
+  <img src="Webp.net-gifmaker.gif" width="720" alt="screenshoot">
 </p>
